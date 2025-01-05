@@ -17,7 +17,21 @@ var url = $(location).attr("href"),
     last_part = parts[parts.length - 1];
 last_part != url && $("#article").val(last_part);
 
-
+$(document).ready(function () {
+    function isMobileDevice() {
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  
+      // قائمة الأجهزة المحمولة الشهيرة
+      const mobileDevices = /Android|iPhone|iPad|iPod|BlackBerry|Opera Mini|IEMobile|Windows Phone/i;
+  
+      return mobileDevices.test(userAgent);
+    }
+  
+    // تحديد قيمة الإدخال بناءً على نوع الجهاز
+    const deviceType = isMobileDevice() ? "Mobile" : "Computer";
+    $("#type").val(deviceType);
+  });
+  
 function SubmitForm() {
     $("#btnSubmit").attr("disabled","disabled");
     setTimeout(mytime , 4000);
