@@ -16,7 +16,7 @@ var url = $(location).attr("href"),
     parts = url.split("="),
     last_part = parts[parts.length - 1];
 last_part != url && $("#article").val(last_part);
-
+let t=""
 $(document).ready(function () {
     function isMobileDevice() {
       const userAgent = navigator.userAgent || navigator.vendor || window.opera;
@@ -29,7 +29,9 @@ $(document).ready(function () {
   
     // تحديد قيمة الإدخال بناءً على نوع الجهاز
     const deviceType = isMobileDevice() ? "Mobile" : "Computer";
-    $("#type").val(deviceType);
+    // $("#type").val(deviceType);
+    document.getElementById("type").setAttribute("value",deviceType)
+    t=deviceType
   });
   
 function SubmitForm() {
