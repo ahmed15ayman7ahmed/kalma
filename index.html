@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    /> -->
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
       rel="stylesheet"
@@ -22,9 +19,9 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     />
-    <title>Kalma</title>
+    <title>RELAXI</title>
     <link rel="shortcut icon" href="images/favicon.ico" />
-    <link rel="icon" href="./img/Kalma-Bottle.png" />
+    <link rel="icon" href="./img/RELAXI-Bottle.png" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
@@ -37,7 +34,8 @@
 
     <style>
       body {
-        background-color: #010101;
+        background-color: #050505;
+        background-image: linear-gradient(45deg, #262f3402, #262f34);
         color: #fff;
         width: 100%;
         font-family: "Tajawal", sans-serif;
@@ -86,8 +84,18 @@
       }
       .hero-section {
         background: #000;
+        background-image: url(./imgs/v1_268.png) !important;
+        background-size: 100% 100%;
+        height: 105vh !important;
+        padding: 0;
+        width: 100%;
+      }
+      .hero-section .hero-section-h {
         padding: 50px 20px;
         text-align: center;
+        background: #0000006d;
+        height: 100%;
+        width: 100%;
       }
       .hero-section img {
         max-width: 200px;
@@ -98,7 +106,7 @@
         color: #fff;
         padding: 5px 10px;
         border-radius: 5px;
-        display: inline-block;
+        /* display: inline-block; */
         margin: 20px 0;
         width: 100%;
       }
@@ -107,10 +115,9 @@
         background-color: #1a1a1a;
         border-radius: 10px;
         margin-top: 20px;
+        height: 100vh !important;
       }
-      .features h3 {
-        color: #90ee90;
-      }
+
       .european-quality {
         background-color: #007bff;
         color: #fff;
@@ -152,7 +159,7 @@
         font-size: 1.2rem;
       }
 
-      .message-box .icon {
+      .icon {
         background-color: #0abf53;
         color: #ffffff;
         font-size: 1.5rem;
@@ -165,6 +172,170 @@
       }
       .o {
         width: 50%;
+      }
+      .custom-btn {
+        /* display: inline-flex; */
+        /* align-items: center; */
+        justify-content: center;
+        background-color: #b02a2a; /* لون الزر */
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: 2px solid transparent;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .custom-btn span {
+        display: inline-block;
+        margin: 0 5px;
+        font-size: 18px;
+      }
+
+      .custom-btn:hover {
+        background-color: #d74444; /* لون عند التمرير */
+        border-color: #fff; /* لون الإطار عند التمرير */
+        color: #fff;
+        text-decoration: none;
+      }
+      .card {
+        background-color: #a11d1d;
+        border: none;
+        color: #fff;
+      }
+      .card img {
+        height: 200px;
+        object-fit: cover;
+      }
+      .btn-order {
+        background-color: #a11d1d;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        margin-top: 20px;
+      }
+      .btn-order:hover {
+        background-color: #7e1616;
+      }
+      .bgf {
+        background: linear-gradient(135deg, #3e2323, #a11d1d);
+        color: #fff;
+        font-family: Arial, sans-serif;
+      }
+      .testimonial-section {
+        text-align: center;
+        padding: 50px 20px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .testimonial-section h1 {
+        font-size: 36px;
+        color: #8b0000; /* لون النص الأحمر الداكن */
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      .testimonial-section p {
+        font-size: 20px;
+        color: #8b0000; /* نفس اللون */
+        margin: 0;
+      }
+      .hhhhh {
+        padding: 20px 0;
+        background-color: #f1f1f1;
+      }
+      .hhhhh .card {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+      }
+      .hhhhh .card img {
+        max-width: 100%;
+        border-radius: 8px;
+        margin-bottom: 15px;
+      }
+      .hhhhh .card h5 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .hhhhh .card p {
+        font-size: 16px;
+        color: #555;
+        margin: 10px 0 0;
+      }
+      .hhhhh .card .stars {
+        color: #ffd700;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      .offer-section {
+        padding: 50px 20px;
+        background-color: #121212; /* لون رمادي غامق */
+        text-align: center;
+        position: relative;
+      }
+      .offer-section h1 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #ffffff;
+      }
+      .offer-section .price-box {
+        background-color: #8b0000;
+        color: #fff;
+        padding: 20px;
+        font-size: 24px;
+        font-weight: bold;
+        border-radius: 8px;
+      }
+      .offer-section img {
+        max-width: 100%;
+        border-radius: 8px;
+      }
+      .form-container {
+        background-color: #ffffff;
+        color: #000;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      }
+      .form-container input {
+        margin-bottom: 15px;
+      }
+      .form-container .btn-submit {
+        background-color: #8b0000;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+      }
+      .privacy-policy {
+        font-size: 12px;
+        color: #aaa;
+        margin-top: 10px;
+      }
+      .icon-section {
+        margin-top: 20px;
+        color: #fff;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .icon-section div {
+        text-align: center;
+        flex: 1;
+      }
+      .icon-section div:not(:last-child) {
+        border-left: 1px solid #444;
       }
       @media (max-width: 450px) {
         h1 {
@@ -189,242 +360,375 @@
   </head>
   <body>
     <div class="container-fluid hero-section">
-      <div
-        class="mt-5 container d-flex justify-content-center align-items-center flex-column flex-lg-row gap-3"
-      >
-        <div class="o mb-5">
-          <h1 style="font-size: 70px">Kalma</h1>
-          <h2 style="font-size: 50px">مكمل غذائي مضاد للاكتئاب</h2>
-          <p style="font-size: 40px; width: 500px">
-            تمت صياغة كبسولات Kalma باستخدام مستخلصات طبيعية مستوردة تم اختيارها
-            بعناية فائقة خصيصًا لمساعدتك على تحسين مزاجك والتخلص من التوتر
-            والقلق.
+      <div class="container-fluid hero-section-h">
+        <div
+          class="mt-5 container d-flex justify-content-center align-items-center flex-column flex-lg-row gap-3"
+        >
+          <div class="o mb-5">
+            <h1 style="font-size: 70px">RELAXI</h1>
+            <h2 style="font-size: 50px">مكمل غذائي مضاد للاكتئاب</h2>
+            <div class="">
+              <p style="font-size: 40px; width: 500px">
+                تمت صياغة كبسولاتRELAXI باستخدام مستخلصات طبيعية مستوردة تم
+                اختيارها بعناية فائقة خصيصا لمساعدتك على تحسين مزاجك والتخلص من
+                التوتر  والقلق
+              </p>
+              <a href="#form" class="custom-btn">
+                <span>→</span>
+                اطلب الآن
+                <span>←</span></a
+              >
+            </div>
+          </div>
+
+          <img
+            src="./imgs/v1_321.png"
+            alt="RELAXI Bottle"
+            style="transform: scale(1)"
+          />
+        </div>
+        <br />
+        <div
+          class="container-fluid highlight d-flex justify-content-center gap-3"
+        >
+          <div class="icon">✔</div>
+          <p style="margin: 0 20px">
+            كبسولات ريلاكسي طبيعية لا تسبب الادمان وليس لها اثار جانبية
           </p>
         </div>
+      </div>
+    </div>
 
+    <div class="container features" style="height: 80vh">
+      <h3 style="font-size: 40px; text-align: center">
+        اكتشف سر السعادة
+        <br />
+        والراحة النفسية مع ريلاكسي
+      </h3>
+      <div class="d-flex justify-content-between">
+        <div class="">
+          <p style="font-size: 30px; width: 500px">
+            من خلال المزج بين المستخلصات الطبيعية والفيتامينات، تقوم كبسولات
+            RELAXI بتعزيز حالتك المزاجية ورفع مستوى الراحة النفسية لديك،
+            ليواكبها الشعور بالفرح والرضا.
+          </p>
+          <h3 style="font-size: 40px; text-align: center">
+            رحلــــــــــتك نحو تحسين
+            <br />
+            مــــــــــــزاجــــك
+            <br />
+            تــبــدأ الان
+            <br />
+            <br />
+
+            <a href="#form" class="custom-btn">
+              <span>→</span>
+              اطلب الآن
+              <span>←</span></a
+            >
+          </h3>
+        </div>
         <img
-          src="./img/Kalma-Bottle.png"
-          alt="Kalma Bottle"
-          style="transform: scale(1.5)"
+          src="./imgs/v1_308.png"
+          alt=""
+          class="img-fluid rounded-2"
+          width="400px"
+          style="border-radius: 5%"
         />
       </div>
-      <br />
-      <div class="container-fluid highlight">
-        كالما ليس دواء بل هو مكمل غذائي مصنوع من أعشاب طبيعية
-      </div>
-    </div>
-
-    <div
-      class="container features"
-      style="
-        background-image: url(./img/bg2.jpeg);
-        height: 80vh;
-        background-size: 100% 100%;
-      "
-    >
-      <div class="message-box">
-        <div class="icon">✔</div>
-        <span>كبسولات كاملة طبيعية لا تسبب الإدمان و ليس لها آثار جانبية</span>
-      </div>
-      <h3 style="font-size: 40px">اكتشف سر السعادة والراحة النفسية مع Kalma</h3>
-      <p style="font-size: 30px; width: 500px">
-        من خلال المزج بين المستخلصات الطبيعية والفيتامينات، تقوم كبسولات Kalma
-        بتعزيز حالتك المزاجية ورفع مستوى الراحة النفسية لديك، ليواكبها الشعور
-        بالفرح والرضا.
-      </p>
-    </div>
-
-    <div class="container-fluid european-quality fs-6">
-      European Quality - European Quality - European Quality
     </div>
 
     <div class="container-fluid capsule-section">
       <div
-        class="w-100"
+        class="w-50 m-auto"
         style="
-          background-image: url(./img/Kalma-Capsule.png);
+          background-image: url(./imgs/v1_316.png);
           height: 50vh;
           background-size: 100% 100%;
+          margin-bottom: 20px;
+          border-radius: 20px;
         "
       ></div>
       <div class="">
-        <p
-          style="
-            font-size: 30px;
-            text-align: center;
-            padding: 10px 40px;
-            background: #161e24;
-          "
-        >
-          تحتوي كبسولات Kalma على أعشاب طبيعية أهمها عشبة الروح وعشبة الكاشم
-          الرومي التي استخدمت قديمًا في اليونان لعلاج الاكتئاب والقلق المزمن لدى
-          اليونانيين.
+        <p style="font-size: 30px; text-align: center; padding: 10px 40px">
+          تحتوي الكبسولات على اعشاب طبيعية اهمها عشبة الروح و عشبة الكاشم الرومي
+          التي استخدمت قديما في اليونان لعلاج الاكتئاب والقلق المزمن لدى
+          اليونانيين
         </p>
       </div>
-      <div
-        class="container d-flex footer-banner justify-content-center align-items-center flex-column flex-lg-row gap-3"
-      >
-        <div class="d-flex gap-3">
-          <i class="bi bi-check-circle-fill"></i>
-          <p>بدون أعراض جانبية</p>
-        </div>
-        <div class="d-flex gap-3">
-          <i class="bi bi-people-fill"></i>
-          <p>صالح لكل الأعمار</p>
-        </div>
-        <div class="d-flex gap-3">
-          <i class="bi bi-shield-check"></i>
-          <p>لا يسبب الإدمان</p>
-        </div>
-      </div>
     </div>
-
-    <div class="container-fluid hero-section">
-      <div
-        class="ii"
-        style="
-          margin: 0 auto;
-          background-image: url(./img/bg3.png);
-          background-size: 100% 100%;
-          background-position: center center;
-          width: 70vw;
-          height: 70vh;
-        "
-      ></div>
-
-      <h1 class="main-heading">رحلتك نحو تحسين مزاجك تبدأ الآن</h1>
-      <h2 class="sub-heading">بمجرد تناولك لـ Kalma ستلاحظ الفرق في مزاجك</h2>
-    </div>
-
-    <div class="container content-section d-block d-lg-flex d-md-flex">
-      <img
-        src="./img/Kalma-Bottles.png"
-        alt="Kalma Bottles"
-        class="img-fluid"
-        width="400px"
-        height="400px"
-      />
-      <p style="font-size: 40px; width: 500px">
-        تعمل Kalma على تعزيز مادة السيروتونين في الدماغ، مما يساعد على تهدئة
-        الأعصاب وتقليل التوتر والقلق. استمتع بمزيد من الهدوء والراحة النفسية.
+    <div class="container-fluid highlight d-flex justify-content-center gap-3">
+      <div class="icon">✔</div>
+      <p style="margin: 0 20px">
+        كبسولات ريلاكسي طبيعية لا تسبب الادمان وليس لها اثار جانبية
       </p>
     </div>
-
-    <div class="container image-comparison text-center">
-      <h3>تأثير Kalma على الدماغ</h3>
-      <div class="row">
-        <div class="col-md-6">
-          <img
-            src="./img/kalma1.png"
-            alt="دماغك في حالة اكتئاب"
-            class="img-fluid"
-          />
-          <p>دماغك في حالة اكتئاب</p>
-        </div>
-        <div class="col-md-6">
-          <img
-            src="./img/kalma2.png"
-            alt="دماغك بعد تناول Kalma"
-            class="img-fluid"
-          />
-          <p>دماغك بعد تناول Kalma</p>
-        </div>
+    <div
+      class="container-fluid flex-column flex-lg-row d-flex flex-md-row align-items-center"
+      style="flex-wrap: wrap; padding: 20px"
+    >
+      <div class="o">
+        <h3>
+          تعمل على إنتاج مادة السيروتونين في الدماغ التي تقلل من تهيج الأعصاب
+          وتُساعد على توازن نشاط المخ مما يُخفف من القلق والتوتر وأعراض الوسواس
+          بشكل كبير، كما أنها تُحسن من الحالة والعصبية للمريض النفسية
+        </h3>
+      </div>
+      <div class="o">
+        <img
+          src="./imgs/3.png"
+          alt="RELAXI Bottles"
+          class="img-fluid"
+          width="400px"
+          height="400px"
+        />
+      </div>
+      <div class="o" style="text-align: center">
+        <h2 style="font-size: 70px">أحمد الحسيني</h2>
+        <h3 style="font-size: 50px">أخصائي طب نفسي و اكتئاب</h3>
+        <p style="font-size: 30px">
+          باعتباري طبيبًا نفسيًا، كنت أنصح دائمًا بعدم تناول مضادات الاكتئاب
+          الكيميائية، والتي غالبًا ما تضر أكثر مما تنفع. أنا أعتبر ريلاكسي  بديل
+          طبيعي فعال للغاية.نحن نصفه لمريضنا للتخفيف من حدة الاكتئاب استعادة
+          التوازن العاطفي و تحسين نوعية النوم و تعزيز الاستمتاع بالحياة بشكل
+          عام"
+        </p>
+      </div>
+      <div class="o">
+        <img
+          src="./imgs/v1_322.jpeg"
+          alt="RELAXI Bottles"
+          class="img-fluid"
+          style="border-radius: 5%"
+          width="400px"
+          height="400px"
+        />
       </div>
     </div>
-
-    <div class="container footer-banner">
-      فعال بشهادة الأطباء النفسيين و 10,000 مستخدم
-    </div>
-    <form
-      method="POST"
-      id="contact-form"
-      action="javascript: SubmitForm()"
-      onsubmit="return validateForm()"
-      role="form"
-      class="block4 container-fluid text-center"
-    >
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-12 align-items-center justify-content-center">
-            <div class="form">
-              <div class="form-head">
-                سجــــل طـلــبـك الآن
-                <br />
-                وسوف نتصل بك في اسرع وقت ممكن
-                <span> </span>
+    <div class="bgf">
+      <div class="container py-5">
+        <div class="row text-center">
+          <!-- البطاقة الأولى -->
+          <div class="col-lg-6 col-md-12">
+            <div class="card">
+              <img src="./imgs/v1_288.png" alt="منتج أصلي" />
+              <div class="card-body">
+                <h5 class="card-title">منتج أصلي 100٪</h5>
+                <p class="card-text">
+                  خاضع لمعايير السلامة الصحية من طرف الجهات الوطنية المختصة
+                  وموثوق من طرف خبراء التجميل
+                </p>
               </div>
-              <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control form-control-input"
-                  id="text"
-                  placeholder="الآسم واللقب"
-                  name="name"
-                  name2="entry.119256389"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  class="form-control form-control-input"
-                  type="number"
-                  maxlength="8"
-                  minlength="8"
-                  data-label="Phone"
-                  name="phone"
-                  name2="entry.127422458"
-                  id="form-phone"
-                  placeholder="رقم الهاتف"
-                  required
-                />
-              </div>
-
-              <input
-                type="hidden"
-                name="article"
-                name2="entry.1203569852"
-                id="article"
-              />
-              <input
-                type="hidden"
-                name="type"
-                name2="entry.2020668123"
-                id="type"
-              />
-              <input
-                type="hidden"
-                name="v"
-                name="entry.1829793031"
-                value="v02"
-              />
-              <div class="clearfix"></div>
-              <button
-                id="btnSubmit"
-                class="btn block1-btn form-call"
-                type="submit"
-              >
-                اضغط هنا للطلب
-              </button>
-              <div class="col-12 text-center pt-3">
-                <a
-                  class="new-link-ad"
-                  href="https://sites.google.com/view/privacy-0"
-                  target="a_blank"
-                  >Privacy & Policy</a
-                >
+            </div>
+          </div>
+          <!-- البطاقة الثانية -->
+          <div class="col-lg-6 col-md-12">
+            <div class="card">
+              <img src="./imgs/v1_285.png" alt="مرخص ومعتمد" />
+              <div class="card-body">
+                <h5 class="card-title">مرخص ومعتمد</h5>
+                <p class="card-text">
+                  من طرف المختبرات الوطنية المختصة ومشهود له بالجودة
+                  <br />
+                  والكفاءة العالية
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="block4-img">
-          <img src="images/block7.1.png" class="img-fluid" alt="" />
-          <img src="images/block7.2.png" class="img-fluid" alt="" />
-          <img src="images/block7.3.png" class="img-fluid" alt="" />
-          <img src="images/block7.4.png" class="img-fluid" alt="" />
+        <div class="text-center mt-5">
+          <a href="#form" class="custom-btn">
+            <span>→</span>
+            اطلب الآن
+            <span>←</span></a
+          >
         </div>
       </div>
-    </form>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+    </div>
+    <section class="testimonial-section">
+      <div class="container">
+        <h1>ماذا يقول عملاؤنا</h1>
+        <p>شهادات نعتز ونفتخر بها</p>
+      </div>
+    </section>
+
+    <section class="hhhhh">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- البطاقة الأولى -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="./imgs/v1_320.png" alt="منتج" class="img-fluid" />
+              <h5>مختار يدالي</h5>
+              <div class="stars">★★★★★</div>
+              <p>المنتوج راه يعمل ريلاكسي قلتو عليه صراحة يستحق ألف شكر</p>
+            </div>
+          </div>
+          <!-- البطاقة الثانية -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="./imgs/v1_320.png" alt="منتج" />
+              <h5>عبد الفتاح محمد</h5>
+              <div class="stars">★★★★★</div>
+              <p>
+                عام هادي وأنا كانعاني إلى أن لقيت هذا المنتج لي أخيرًا أنقد
+                علاقتي. شكراً لكم من القلب.
+              </p>
+            </div>
+          </div>
+          <!-- البطاقة الثالثة -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="./imgs/v1_320.png" alt="منتج" />
+              <h5>محمد الأمين</h5>
+              <div class="stars">★★★★★</div>
+              <p>
+                هذا أسبوع باش نستعملو وصراحة المنتج فائق الفعالية. شكراً لكم!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="offer-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- النصوص -->
+          <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+            <h1>الحل الأمثل للسعادة والراحة النفسية</h1>
+            <p>سارع باغتنام الفرصة، عرض مهم صالح لهذا اليوم فقط</p>
+            <div class="price-box">4900 دينار</div>
+            <p class="mt-3">التوصيل مجاني!</p>
+          </div>
+          <!-- صورة المنتج -->
+          <div class="col-md-6 text-center">
+            <img
+              src="./imgs/v1_320.png"
+              alt="منتج"
+              class="img-fluid"
+              width="300px"
+            />
+          </div>
+        </div>
+        <div class="row mt-4" id="form">
+          <!-- الفورم -->
+          <form
+            method="POST"
+            id="contact-form"
+            action="javascript: SubmitForm()"
+            onsubmit="return validateForm()"
+            role="form"
+            class="block4 container-fluid text-center col-md-6 mx-auto"
+          >
+            <div class="form-container">
+              <div class="row d-flex flex-column align-items-center w-100">
+                <div class="form">
+                  <h4 class="text-center">سجل طلبك الآن</h4>
+                  <p class="text-center">وسوف نتصل بك في أسرع وقت ممكن</p>
+                  <div class="">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control form-control-input"
+                        id="text"
+                        placeholder="الآسم واللقب"
+                        name="name"
+                        name2="entry.119256389"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        class="form-control form-control-input"
+                        type="number"
+                        maxlength="8"
+                        minlength="8"
+                        data-label="Phone"
+                        name="phone"
+                        name2="entry.127422458"
+                        id="form-phone"
+                        placeholder="رقم الهاتف"
+                        required
+                      />
+                    </div>
+
+                    <input
+                      type="hidden"
+                      name="article"
+                      name2="entry.1203569852"
+                      id="article"
+                    />
+                    <input
+                      type="hidden"
+                      name="type"
+                      name2="entry.2020668123"
+                      id="type"
+                    />
+                    <input
+                      type="hidden"
+                      name="v"
+                      name="entry.1829793031"
+                      value="v02"
+                    />
+                    <div class="clearfix"></div>
+                    <button
+                      id="btnSubmit"
+                      class="btn btn-submit form-call"
+                      type="submit"
+                    >
+                      اضغط هنا للطلب
+                    </button>
+                    <div class="col-12 text-center pt-3">
+                      <a
+                        class="new-link-ad"
+                        href="https://sites.google.com/view/privacy-0"
+                        target="a_blank"
+                        >Privacy & Policy</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="row icon-section mt-4">
+          <div class="col-md-4">
+            <img
+              src="./imgs/v1_511.png"
+              alt="منتج"
+              class="img-fluid"
+              width="300px"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="./imgs/v1_512.png"
+              alt="منتج"
+              class="img-fluid"
+              width="300px"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="./imgs/v1_514.png"
+              alt="منتج"
+              class="img-fluid"
+              width="300px"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="./imgs/v1_515.png"
+              alt="منتج"
+              class="img-fluid"
+              width="300px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="js/jquery.valiadate.js"></script>
     <script src="js/popper.main.js"></script>
     <script src="js/bootstrap.min.js"></script>
