@@ -33,6 +33,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
 
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
       body {
         background-color: #050505;
         background-image: linear-gradient(45deg, #262f3402, #262f34);
@@ -108,6 +113,7 @@
         border-radius: 5px;
         /* display: inline-block; */
         margin: 20px 0;
+        text-align: center;
         width: 100%;
       }
       .features {
@@ -210,6 +216,9 @@
         height: 200px;
         object-fit: cover;
       }
+      .jjj {
+        gap: 20px 0;
+      }
       .btn-order {
         background-color: #a11d1d;
         color: #fff;
@@ -253,9 +262,14 @@
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         padding: 20px;
         text-align: center;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
       .hhhhh .card img {
-        max-width: 100%;
+        max-width: 100px;
+
         border-radius: 8px;
         margin-bottom: 15px;
       }
@@ -339,24 +353,42 @@
       }
       @media (max-width: 450px) {
         h1 {
-          font-size: 40px !important;
-        }
-        h2 {
           font-size: 30px !important;
         }
-        p {
+        h2:not(.pp),
+        h3 {
           font-size: 20px !important;
+        }
+        h2.pp {
+          font-size: 25px !important;
+        }
+        p {
+          font-size: 18px !important;
           width: 100% !important;
         }
         .o {
           width: 100%;
         }
+
         .ii {
           width: 100vw !important;
           height: 50vh !important;
         }
         .features {
           height: 160vh !important;
+        }
+        .hero-section {
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        .hero-section img {
+          width: 100px !important;
+        }
+        .bb img {
+          width: 100px !important;
+        }
+        .o.m-auto {
+          height: 34vh !important;
         }
       }
     </style>
@@ -365,7 +397,7 @@
     <div class="container-fluid hero-section">
       <div class="container-fluid hero-section-h">
         <div
-          class="mt-5 container d-flex justify-content-center align-items-center flex-column flex-lg-row gap-3"
+          class="mt-0 mt-lg-5 container d-flex justify-content-center align-items-center flex-column flex-lg-row gap-3"
         >
           <div class="o mb-5">
             <h1 style="font-size: 70px">RELAXI</h1>
@@ -374,7 +406,7 @@
               <p style="font-size: 40px; width: 500px">
                 تمت صياغة كبسولاتRELAXI باستخدام مستخلصات طبيعية مستوردة تم
                 اختيارها بعناية فائقة خصيصا لمساعدتك على تحسين مزاجك والتخلص من
-                التوتر  والقلق
+                التوتر والقلق
               </p>
               <a href="#form" class="custom-btn">
                 <span>→</span>
@@ -384,11 +416,7 @@
             </div>
           </div>
 
-          <img
-            src="./imgs/v1_321.png"
-            alt="RELAXI Bottle"
-            style="transform: scale(1)"
-          />
+          <img src="./imgs/v1_321.png" alt="RELAXI Bottle" />
         </div>
         <br />
         <div
@@ -448,7 +476,7 @@
         class="o m-auto"
         style="
           background-image: url(./imgs/v1_316.png);
-          height: 50vh;
+          height: 60vh;
           background-size: 100% 100%;
           margin-bottom: 20px;
           border-radius: 20px;
@@ -469,11 +497,11 @@
       </p>
     </div>
     <div
-      class="container-fluid flex-column flex-lg-row d-flex flex-md-row align-items-center"
+      class="container-fluid flex-column flex-lg-row d-flex flex-md-row align-items-center jjj"
       style="flex-wrap: wrap; padding: 20px"
     >
       <div class="o">
-        <h3>
+        <h3 style="text-align: center">
           تعمل على إنتاج مادة السيروتونين في الدماغ التي تقلل من تهيج الأعصاب
           وتُساعد على توازن نشاط المخ مما يُخفف من القلق والتوتر وأعراض الوسواس
           بشكل كبير، كما أنها تُحسن من الحالة والعصبية للمريض النفسية
@@ -489,7 +517,7 @@
         />
       </div>
       <div class="o" style="text-align: center">
-        <h2 style="font-size: 70px">أحمد الحسيني</h2>
+        <h2 class="pp" style="font-size: 70px">أحمد الحسيني</h2>
         <h3 style="font-size: 50px">أخصائي طب نفسي و اكتئاب</h3>
         <p style="font-size: 30px">
           باعتباري طبيبًا نفسيًا، كنت أنصح دائمًا بعدم تناول مضادات الاكتئاب
@@ -512,7 +540,7 @@
     </div>
     <div class="bgf">
       <div class="container py-5">
-        <div class="row text-center">
+        <div class="row text-center jjj">
           <!-- البطاقة الأولى -->
           <div class="col-lg-6 col-md-12">
             <div class="card">
@@ -559,7 +587,7 @@
 
     <section class="hhhhh">
       <div class="container">
-        <div class="row gy-4">
+        <div class="row jjj">
           <!-- البطاقة الأولى -->
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card">
@@ -606,7 +634,7 @@
             <p class="mt-3">التوصيل مجاني!</p>
           </div>
           <!-- صورة المنتج -->
-          <div class="col-md-6 text-center">
+          <div class="col-md-6 text-center bb">
             <img
               src="./imgs/v1_320.png"
               alt="منتج"
